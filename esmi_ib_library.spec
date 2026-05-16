@@ -8,6 +8,7 @@ Group:		Libraries
 #Source0Download: https://github.com/amd/esmi_ib_library/tags
 Source0:	https://github.com/amd/esmi_ib_library/archive/esmi_pkg_ver-%{version}/%{name}-esmi_pkg_ver-%{version}.tar.gz
 # Source0-md5:	e5958140596a4cd6a97c254fcfdccfc7
+Patch0:		%{name}-libdir.patch
 URL:		https://github.com/amd/esmi_ib_library
 BuildRequires:	cmake >= 3.5.0
 # <asm/amd_hsmp.h>
@@ -72,6 +73,7 @@ Dokumentacja API biblioteki E-SMI.
 
 %prep
 %setup -q -n %{name}-esmi_pkg_ver-%{version}
+%patch -P0 -p1
 
 %build
 install -d build

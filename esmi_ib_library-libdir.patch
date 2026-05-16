@@ -1,0 +1,11 @@
+--- esmi_ib_library-esmi_pkg_ver-5.2.1/CMakeLists.txt.orig	2026-03-20 07:36:30.000000000 +0100
++++ esmi_ib_library-esmi_pkg_ver-5.2.1/CMakeLists.txt	2026-05-16 08:00:15.128419913 +0200
+@@ -177,7 +177,7 @@ install(PROGRAMS ${CMAKE_CURRENT_BINARY_
+ 					DESTINATION ${E_SMI}/bin)
+ else ()
+ install(TARGETS ${E_SMI_TARGET}
+-          LIBRARY DESTINATION lib COMPONENT ${E_SMI_COMPONENT})
++          LIBRARY DESTINATION lib${LIB_SUFFIX} COMPONENT ${E_SMI_COMPONENT})
+ install(FILES ${SOURCE_DIR}/include/e_smi/e_smi.h
+                                         DESTINATION include/e_smi)
+ install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${SMI_TOOL}
