@@ -1,13 +1,13 @@
 Summary:	EPYC System Management Interface (E-SMI) In-band library
 Summary(pl.UTF-8):	Biblioteka komunikacji in-band z EPYC SMI (E-SMI)
 Name:		esmi_ib_library
-Version:	5.2.1
+Version:	5.2.1.1
 Release:	1
 License:	NCSA
 Group:		Libraries
 #Source0Download: https://github.com/amd/esmi_ib_library/tags
 Source0:	https://github.com/amd/esmi_ib_library/archive/esmi_pkg_ver-%{version}/%{name}-esmi_pkg_ver-%{version}.tar.gz
-# Source0-md5:	e5958140596a4cd6a97c254fcfdccfc7
+# Source0-md5:	4fb59f861f712697c9d75006d5fee270
 Patch0:		%{name}-libdir.patch
 URL:		https://github.com/amd/esmi_ib_library
 BuildRequires:	cmake >= 3.5.0
